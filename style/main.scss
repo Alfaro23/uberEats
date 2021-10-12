@@ -1,0 +1,102 @@
+.main{
+    margin-top: 56px;
+
+    &__input{
+        width: 100%;
+        border: none;
+        background: none;
+        border-bottom: 1px solid #757575;
+    }
+    &__input::placeholder{
+        font-size: 16px;
+        line-height: 24px;
+        color: #626262;;
+    }
+    &__input:focus{
+        outline: none;
+    }
+    // input {outline:none;}
+    &-content{
+
+        &__name{
+            margin-top: 56px;
+            font-size: 22px;
+            line-height: 34px;
+            color: #1D1D1D;
+            margin-bottom: 16px;
+            font-weight: normal;
+        }
+    }
+}
+
+.restaurant{
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    &-card{
+        display: flex;
+        flex-direction: column;
+        max-width: 308px;
+        width: 33%;
+
+        &:not(:nth-child(3n)){
+            margin-right: 16px;
+        }
+
+        &-type{
+            display: flex;
+        }
+
+        &__image{
+            width: 100%;
+        }
+        &__name{
+            margin-top: 16px;
+            margin-bottom: 4px;
+            font-size: 16px;
+            line-height: 24px;
+            color: #1D1D1D;
+            font-weight: normal;
+        }
+        &__cost{
+            font-size: 14px;
+            line-height: 21px;
+            color: #626262;
+            &::after{
+                content: "";
+                width: 5px;
+                height: 5px;
+                border-radius: 50%;
+                background-color: #626262;
+                display: inline-block;
+                margin: 0 5px;
+                margin-bottom: 3px;
+            }
+        }
+        &__category{
+            font-size: 14px;
+            line-height: 21px;
+            color: #626262;
+            &:not(:last-child):after{
+                content: "";
+                width: 5px;
+                height: 5px;
+                border-radius: 50%;
+                background-color: #626262;
+                display: inline-block;
+                margin: 0 5px;
+                margin-bottom: 3px;
+            }
+        }
+        &__time{
+            margin-bottom: 20px;
+            margin-top: 4px;
+            font-size: 13px;
+            line-height: 21px;
+            color: #1D1D1D;
+        }
+    }
+    
+}
